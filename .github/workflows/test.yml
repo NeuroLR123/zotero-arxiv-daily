@@ -36,4 +36,4 @@ jobs:
           MODEL_NAME: ${{ secrets.MODEL_NAME }}
           LANGUAGE: ${{ vars.LANGUAGE }}
         run: |
-          uv run main.py --debug
+          uv run main.py --zotero_id $ZOTERO_ID --zotero_key $ZOTERO_KEY --debug
